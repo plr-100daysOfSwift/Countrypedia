@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UITableViewController {
 
+	var countries = [Country]()
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
@@ -17,7 +19,7 @@ class ViewController: UITableViewController {
 	// MARK:- Table View Data Source
 
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 1
+		return countries.count
 	}
 
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -16,6 +16,7 @@
 		DA85733B264C841A0096C536 /* CountripediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85733A264C841A0096C536 /* CountripediaTests.swift */; };
 		DA857346264C841A0096C536 /* CountripediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA857345264C841A0096C536 /* CountripediaUITests.swift */; };
 		DA857354264C843A0096C536 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA857353264C843A0096C536 /* README.md */; };
+		DA857356264C85CA0096C536 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA857355264C85CA0096C536 /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DA857345264C841A0096C536 /* CountripediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountripediaUITests.swift; sourceTree = "<group>"; };
 		DA857347264C841A0096C536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA857353264C843A0096C536 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DA857355264C85CA0096C536 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				DA85732C264C841A0096C536 /* Assets.xcassets */,
 				DA85732E264C841A0096C536 /* LaunchScreen.storyboard */,
 				DA857331264C841A0096C536 /* Info.plist */,
+				DA857355264C85CA0096C536 /* Country.swift */,
 			);
 			path = Countripedia;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA857356264C85CA0096C536 /* Country.swift in Sources */,
 				DA857328264C84190096C536 /* ViewController.swift in Sources */,
 				DA857324264C84190096C536 /* AppDelegate.swift in Sources */,
 				DA857326264C84190096C536 /* SceneDelegate.swift in Sources */,
