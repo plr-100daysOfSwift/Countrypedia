@@ -19,6 +19,7 @@
 		DA857356264C85CA0096C536 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA857355264C85CA0096C536 /* Country.swift */; };
 		DA857358264C86830096C536 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA857357264C86830096C536 /* DetailViewController.swift */; };
 		DA85735A264CDA0F0096C536 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = DA857359264CDA0F0096C536 /* countries.json */; };
+		DA85735C264CEBD40096C536 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA85735B264CEBD40096C536 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		DA857355264C85CA0096C536 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		DA857357264C86830096C536 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DA857359264CDA0F0096C536 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		DA85735B264CEBD40096C536 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		DA857317264C84190096C536 = {
 			isa = PBXGroup;
 			children = (
+				DA85735B264CEBD40096C536 /* LICENSE */,
 				DA857353264C843A0096C536 /* README.md */,
 				DA857322264C84190096C536 /* Countripedia */,
 				DA857339264C841A0096C536 /* CountripediaTests */,
@@ -243,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA85735C264CEBD40096C536 /* LICENSE in Resources */,
 				DA857330264C841A0096C536 /* LaunchScreen.storyboard in Resources */,
 				DA85732D264C841A0096C536 /* Assets.xcassets in Resources */,
 				DA857354264C843A0096C536 /* README.md in Resources */,
