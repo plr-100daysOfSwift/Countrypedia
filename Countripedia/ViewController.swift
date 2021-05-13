@@ -35,6 +35,7 @@ class ViewController: UITableViewController {
 		let jsonData = JSON.data(using: .utf8)!
 		let countries: [Country] = try! JSONDecoder().decode([Country].self, from: jsonData)
 
+		// TODO: Sort the countries
 		self.countries = countries
 
 	}
