@@ -47,6 +47,7 @@ class ViewController: UITableViewController {
 		if let vc = storyboard.instantiateViewController(identifier: "DetailViewController") as? DetailViewController {
 			vc.country = country
 			navigationController?.pushViewController(vc, animated: true)
+			// FIX: It is possible to push the controller twice to the navigation stack
 		}
 
 	}
