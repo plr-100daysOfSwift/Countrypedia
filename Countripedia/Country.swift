@@ -9,14 +9,8 @@ import Foundation
 
 struct Country: Codable {
 
-	enum CodingKeys: String, CodingKey {
-		case name
-		case capital = "capital_city"
-		case population
-	}
-
 	let name: String
-	let capital: String
+	let capitalCity: String
 	let population: Int?
 
 }

@@ -18,9 +18,12 @@ class ViewController: UITableViewController {
 	}
 
 	fileprivate func loadData() {
+		let decoder = JSONDecoder()
+		decoder.keyDecodingStrategy = .convertFromSnakeCase
+
 		if let filePath = Bundle.main.url(forResource: "countries", withExtension: "json"),
 			 let data = try? Data(contentsOf:filePath),
-			 let decodedJSON: [Country] = try? JSONDecoder().decode([Country].self, from: data) {
+			 let decodedJSON: [Country] = try? decoder.decode([Country].self, from: data) {
 			// TODO: Sort the countries
 			self.countries = decodedJSON
 		}
