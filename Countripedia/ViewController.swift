@@ -18,13 +18,11 @@ class ViewController: UITableViewController {
 	}
 
 	fileprivate func loadData() {
-		if let filePath = Bundle.main.url(forResource: "countries", withExtension: "json") {
-			if let data = try? Data(contentsOf:filePath) {
-				if let decodedJSON: [Country] = try? JSONDecoder().decode([Country].self, from: data) {
-					// TODO: Sort the countries
-					self.countries = decodedJSON
-				}
-			}
+		if let filePath = Bundle.main.url(forResource: "countries", withExtension: "json"),
+			 let data = try? Data(contentsOf:filePath),
+			 let decodedJSON: [Country] = try? JSONDecoder().decode([Country].self, from: data) {
+			// TODO: Sort the countries
+			self.countries = decodedJSON
 		}
 	}
 

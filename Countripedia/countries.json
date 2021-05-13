@@ -1,14 +1,14 @@
 [
 	{
 		"name": "India",
-		"capital": "New Delhi"
+		"capital_city": "New Delhi"
 	},
 	{
 		"name": "Australia",
-		"capital": "Canberra"		
+		"capital_city": "Canberra"
 	},
 	{
 		"name": "Germany",
-		"capital": "Berlin"
+		"capital_city": "Berlin"
 	}
 ]
