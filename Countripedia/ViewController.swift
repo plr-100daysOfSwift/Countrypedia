@@ -24,6 +24,10 @@ class ViewController: UITableViewController {
 			{
 			"name": "Australia",
 			"capital": "Canberra"
+			},
+			{
+			"name": "Germany",
+			"capital": "Berlin"
 			}
 			]
 			"""
