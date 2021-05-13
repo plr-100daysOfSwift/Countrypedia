@@ -14,7 +14,10 @@ class ViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		title = "Countripedia"
+		loadData()
+	}
 
+	fileprivate func loadData() {
 		if let filePath = Bundle.main.url(forResource: "countries", withExtension: "json") {
 			if let data = try? Data(contentsOf:filePath) {
 				if let decodedJSON: [Country] = try? JSONDecoder().decode([Country].self, from: data) {
@@ -23,7 +26,6 @@ class ViewController: UITableViewController {
 				}
 			}
 		}
-
 	}
 
 	// MARK:- Table View Data Source
