@@ -45,13 +45,15 @@ class ViewController: UITableViewController {
 	// MARK:- Table View Delegate
 
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		// FIXME: didSelectRowAt is being called twice the first time a row is selected after launching.
+		// This results in the detail view controller being pushed to the navigaton stack twice.
+		print("pushing to stack")
+
 		let country = countries[indexPath.row]
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 		if let vc = storyboard.instantiateViewController(identifier: "DetailViewController") as? DetailViewController {
 			vc.country = country
-			print("pushing to stack")
 			navigationController?.pushViewController(vc, animated: true)
-			// FIX: It is possible to push the controller twice to the navigation stack
 		}
 
 	}
