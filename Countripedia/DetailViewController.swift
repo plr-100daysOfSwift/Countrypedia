@@ -17,7 +17,7 @@ class DetailViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		nameLabel.text = country.name
-		capitalLabel.text = country.capital
+		capitalLabel.text = "Capital City: \(country.capital)"
 	}
 
 }
