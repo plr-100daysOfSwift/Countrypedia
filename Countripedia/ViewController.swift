@@ -13,6 +13,7 @@ class ViewController: UITableViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		navigationController?.navigationBar.prefersLargeTitles = true
 		title = "Countripedia"
 		loadData()
 	}

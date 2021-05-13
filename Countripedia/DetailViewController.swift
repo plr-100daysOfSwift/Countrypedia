@@ -16,6 +16,7 @@ class DetailViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		navigationItem.largeTitleDisplayMode = .never
 		nameLabel.text = country.name
 		capitalLabel.text = "Capital City: \(country.capitalCity)"
 	}
