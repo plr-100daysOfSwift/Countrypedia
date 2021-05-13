@@ -18,6 +18,7 @@
 		DA857354264C843A0096C536 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA857353264C843A0096C536 /* README.md */; };
 		DA857356264C85CA0096C536 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA857355264C85CA0096C536 /* Country.swift */; };
 		DA857358264C86830096C536 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA857357264C86830096C536 /* DetailViewController.swift */; };
+		DA85735A264CDA0F0096C536 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = DA857359264CDA0F0096C536 /* countries.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		DA857353264C843A0096C536 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA857355264C85CA0096C536 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		DA857357264C86830096C536 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DA857359264CDA0F0096C536 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				DA85732C264C841A0096C536 /* Assets.xcassets */,
 				DA85732E264C841A0096C536 /* LaunchScreen.storyboard */,
 				DA857331264C841A0096C536 /* Info.plist */,
+				DA857359264CDA0F0096C536 /* countries.json */,
 			);
 			path = Countripedia;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				DA857330264C841A0096C536 /* LaunchScreen.storyboard in Resources */,
 				DA85732D264C841A0096C536 /* Assets.xcassets in Resources */,
 				DA857354264C843A0096C536 /* README.md in Resources */,
+				DA85735A264CDA0F0096C536 /* countries.json in Resources */,
 				DA85732B264C84190096C536 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

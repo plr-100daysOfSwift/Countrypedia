@@ -15,28 +15,14 @@ class ViewController: UITableViewController {
 		super.viewDidLoad()
 		title = "Countripedia"
 
-		let JSON = """
-			[
-			{
-			"name": "India",
-			"capital": "New Delhi"
-			},
-			{
-			"name": "Australia",
-			"capital": "Canberra"
-			},
-			{
-			"name": "Germany",
-			"capital": "Berlin"
+		if let filePath = Bundle.main.url(forResource: "countries", withExtension: "json") {
+			if let data = try? Data(contentsOf:filePath) {
+				if let decodedJSON: [Country] = try? JSONDecoder().decode([Country].self, from: data) {
+					// TODO: Sort the countries
+					self.countries = decodedJSON
+				}
 			}
-			]
-			"""
-
-		let jsonData = JSON.data(using: .utf8)!
-		let countries: [Country] = try! JSONDecoder().decode([Country].self, from: jsonData)
-
-		// TODO: Sort the countries
-		self.countries = countries
+		}
 
 	}
 
