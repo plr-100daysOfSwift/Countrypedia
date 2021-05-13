@@ -7,6 +7,9 @@
 
 import Foundation
 
-struct Country {
-	var name: String
+struct Country: Codable {
+	let name: String
+	let capital: String
+	let population: Int?
+
 }

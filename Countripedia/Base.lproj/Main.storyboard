@@ -27,7 +27,7 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nml-PI-9ng">
                                             <rect key="frame" x="20" y="0.0" width="356.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -78,15 +78,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKx-nS-UfU">
+                                <rect key="frame" x="186" y="176" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jCw-rU-ZDG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="edJ-dV-yqd" firstAttribute="centerX" secondItem="jCw-rU-ZDG" secondAttribute="centerX" id="aPL-58-FGH"/>
+                            <constraint firstItem="UKx-nS-UfU" firstAttribute="centerX" secondItem="jCw-rU-ZDG" secondAttribute="centerX" id="aq1-TN-Ncy"/>
+                            <constraint firstItem="UKx-nS-UfU" firstAttribute="top" secondItem="edJ-dV-yqd" secondAttribute="bottom" constant="8" symbolic="YES" id="xOM-3S-Bwp"/>
                             <constraint firstItem="edJ-dV-yqd" firstAttribute="top" secondItem="jCw-rU-ZDG" secondAttribute="top" constant="103" id="xoY-vK-7Jy"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="capitalLabel" destination="UKx-nS-UfU" id="lWJ-fs-AC9"/>
                         <outlet property="nameLabel" destination="edJ-dV-yqd" id="a3z-Ae-DKN"/>
                     </connections>
                 </viewController>

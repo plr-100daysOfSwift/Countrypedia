@@ -14,8 +14,25 @@ class ViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		title = "Countripedia"
-		let country = Country(name: "Australia")
-		countries.append(country)
+
+		let JSON = """
+			[
+			{
+			"name": "India",
+			"capital": "New Delhi"
+			},
+			{
+			"name": "Australia",
+			"capital": "Canberra"
+			}
+			]
+			"""
+
+		let jsonData = JSON.data(using: .utf8)!
+		let countries: [Country] = try! JSONDecoder().decode([Country].self, from: jsonData)
+
+		self.countries = countries
+
 	}
 
 	// MARK:- Table View Data Source

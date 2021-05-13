@@ -12,10 +12,12 @@ class DetailViewController: UIViewController {
 	var country: Country!
 
 	@IBOutlet var nameLabel: UILabel!
-
+	@IBOutlet var capitalLabel: UILabel!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		nameLabel.text = country.name
+		capitalLabel.text = country.capital
 	}
 
 }
