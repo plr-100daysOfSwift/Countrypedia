@@ -23,4 +23,4 @@ Go ahead and try coding it now. If you hit problems, here are some hints:
 1. Add a button to the detail view to show a web view displaying the Wikipedia page for the country.
 
 
-[1]:https://www.hackingwithswift.com/100/swift/60
+[1]:https://www.hackingwithswift.com/100/59
